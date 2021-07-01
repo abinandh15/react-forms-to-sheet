@@ -1,0 +1,19 @@
+@import '../variables.scss';
+
+.DetailsForm{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    font-size: 20px;
+}
+
+
+
+.submit-button{
+    background-color: $secondary;
+    border-radius: 25px;
+    padding:10px;
+    color: $primary;
+    font-weight: bold;
+    border:0;
+}
