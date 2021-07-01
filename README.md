@@ -1,3 +1,19 @@
+
+# React Forms to Google Sheets
+
+![image](https://user-images.githubusercontent.com/47912011/124166971-19b88b00-dac1-11eb-9d91-cb2e837566cd.png)
+
+A simple react app with integration to Google Sheets.
+
+Libraries used:
+1. [Formik](https://formik.org/docs/overview)
+2. [node-google-spreadsheet](https://github.com/theoephraim/node-google-spreadsheet)
+
+## Setup
+- `npm install`
+- rename `.env.demo` to `.env` and add your credentials and sheet id.
+- `yarn start` or `npm run start` to run app in your local
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
