@@ -1,7 +1,7 @@
 
 # React Forms to Google Sheets
 
-![image](https://user-images.githubusercontent.com/47912011/124166971-19b88b00-dac1-11eb-9d91-cb2e837566cd.png)
+![image](https://raw.githubusercontent.com/abinandh15/react-forms-to-sheet/main/demo.gif)
 
 A simple react app with integration to Google Sheets.
 
