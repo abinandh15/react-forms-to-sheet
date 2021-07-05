@@ -16,7 +16,7 @@ jobs:
     - name: Commit file
       uses: swinton/commit@v2.x
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: 4AEE18F83AFDEB23
       with:
         files: |
           myfile
