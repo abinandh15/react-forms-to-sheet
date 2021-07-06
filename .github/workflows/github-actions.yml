@@ -3,25 +3,16 @@ on:
   push:
     branches:
     - main
-
 jobs:
-  screenshots:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: install puppeteer-headful
-      uses: mujo-code/puppeteer-headful@master
-      env:
-        CI: 'true'
-    - name: screenshots-ci-action
-      uses: flameddd/screenshots-ci-action@v1.1.1
+    - uses: actions/checkout@master
+    - uses: hakierspejs/jekyll-screenshot-github-action@master
+    - uses: actions/upload-artifact@v1
       with:
-        url: https://github.com
-        devices: iPhone 6
-    - uses: actions/upload-artifact@v2
-      with:
-        path: screenshots
-        name: Download-screenshots
+       name: screenshot
+       path: /home/runner/work/_temp/_github_home/screenshot.png
 
 #     - name: Screenshot Website
 #       uses: swinton/screenshot-website@v1.x
