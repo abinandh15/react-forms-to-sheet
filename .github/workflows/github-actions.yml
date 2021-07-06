@@ -12,13 +12,19 @@ jobs:
       with:
         source: https://github.com/swinton/screenshot-website
         destination: screenshot.png
-
-    - name: Commit file
-      uses: swinton/commit@v2.x
-      env:
-        GH_TOKEN: ${{ secrets.TOKEN_GH }}
+        
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v2
       with:
-        files: |
-          screenshot.png
-        commit-message: Committing ./myfile
-        ref: refs/heads/main
+          name: code-coverage-report
+          path: src/code-coverage.jpg
+
+#     - name: Commit file
+#       uses: swinton/commit@v2.x
+#       env:
+#         GH_TOKEN: ${{ secrets.TOKEN_GH }}
+#       with:
+#         files: |
+#           screenshot.png
+#         commit-message: Committing ./myfile
+#         ref: refs/heads/main
