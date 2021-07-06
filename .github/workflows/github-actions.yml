@@ -15,7 +15,6 @@ jobs:
         uses: flameddd/screenshots-ci-action@v1.1.1
         with:
           url: https://github.com
-          devices: desktop (1920x1080)
       - uses: actions/upload-artifact@v2
         with:
           path: screenshots
