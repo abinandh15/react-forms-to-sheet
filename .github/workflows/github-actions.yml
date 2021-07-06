@@ -3,7 +3,7 @@ on: [push]
 jobs:
   screenshot:
     name: Screenshot
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
