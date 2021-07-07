@@ -7,24 +7,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: hakierspejs/jekyll-screenshot-github-action@master
-    - uses: actions/upload-artifact@v1
+    - name: Screenshot Website
+      uses: swinton/screenshot-website@v1.x
       with:
-       name: screenshot
-       path: /home/runner/work/_temp/_github_home/screenshot.png
-
-#     - name: Screenshot Website
-#       uses: swinton/screenshot-website@v1.x
-#       with:
-#         source: https://github.com/swinton/screenshot-website
-#         destination: ./src/screenshot.png
+        source: https://github.com/swinton/screenshot-website
+        destination: src/screenshot.png
         
 #     - name: Archive code coverage results
 #       uses: actions/upload-artifact@v2
 #       with:
 #           name: code-coverage-report
-#           path: ./src/screenshot.png
+#           path: src/screenshot.png
 
 #     - name: Commit file
 #       uses: swinton/commit@v2.x
