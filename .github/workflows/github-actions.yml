@@ -14,7 +14,7 @@ jobs:
       uses: swinton/screenshot-website@v1.x
       with:
         source: https://github.com/swinton/screenshot-website
-        destination: screenshot.png
+        destination: src/screenshot.png
         
     - name: Archive code coverage results
       uses: actions/upload-artifact@v2
